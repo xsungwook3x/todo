@@ -100,6 +100,7 @@ public class TodoController {
 
             // (6) ResponseDTO를 리턴한다.
             return ResponseEntity.ok().body(response);
+
         } catch (Exception e) {
             // (8) 혹시 예외가 나는 경우 dto대신 error에 메시지를 넣어 리턴한다.
             String error = e.getMessage();
